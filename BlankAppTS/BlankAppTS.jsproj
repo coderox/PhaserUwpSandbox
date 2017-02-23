@@ -42,6 +42,54 @@
     <ProjectGuid>0e2b4de0-abce-4a04-a7ca-90ba5bd3117f</ProjectGuid>
     <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
   </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <TypeScriptOutFile>
+    </TypeScriptOutFile>
+    <TypeScriptModuleKind>none</TypeScriptModuleKind>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TypeScriptOutFile>
+    </TypeScriptOutFile>
+    <TypeScriptModuleKind>none</TypeScriptModuleKind>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)|$(UseDotNetNativeToolchain)'=='Release|ARM|true'">
+    <TypeScriptOutFile>
+    </TypeScriptOutFile>
+    <TypeScriptModuleKind>none</TypeScriptModuleKind>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <TypeScriptOutFile>
+    </TypeScriptOutFile>
+    <TypeScriptModuleKind>none</TypeScriptModuleKind>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)|$(UseDotNetNativeToolchain)'=='Release|x64|true'">
+    <TypeScriptOutFile>
+    </TypeScriptOutFile>
+    <TypeScriptModuleKind>none</TypeScriptModuleKind>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TypeScriptOutFile>
+    </TypeScriptOutFile>
+    <TypeScriptModuleKind>none</TypeScriptModuleKind>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)|$(UseDotNetNativeToolchain)'=='Release|x86|true'">
+    <TypeScriptOutFile>
+    </TypeScriptOutFile>
+    <TypeScriptModuleKind>none</TypeScriptModuleKind>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <TypeScriptOutFile>
+    </TypeScriptOutFile>
+    <TypeScriptModuleKind>none</TypeScriptModuleKind>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+  </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0'">
     <VisualStudioVersion>14.0</VisualStudioVersion>
@@ -62,8 +110,10 @@
     </AppxManifest>
     <Content Include="fonts\nokia16black.png" />
     <Content Include="fonts\nokia16black.xml" />
+    <Content Include="images\atari_fujilogo.png" />
     <Content Include="images\catastrophi.png" />
     <Content Include="images\flixel-button.png" />
+    <Content Include="images\vu.png" />
     <Content Include="index.html" />
     <Content Include="images\LockScreenLogo.scale-200.png" />
     <Content Include="images\SplashScreen.scale-200.png" />

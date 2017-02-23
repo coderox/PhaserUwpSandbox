@@ -127,4 +127,3 @@ function startApp() {
 window.onload = function () {
     startApp();
 };
-//# sourceMappingURL=main.js.map
