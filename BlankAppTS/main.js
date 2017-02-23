@@ -5,18 +5,6 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var PhaserSandboxUwp;
 (function (PhaserSandboxUwp) {
-    var TheGame = (function (_super) {
-        __extends(TheGame, _super);
-        function TheGame(config) {
-            _super.call(this, config);
-            this.state.add('boot', Boot);
-            this.state.add('splash', Splash);
-            this.state.add('title', Title);
-            this.state.start('boot');
-        }
-        return TheGame;
-    }(Phaser.Game));
-    PhaserSandboxUwp.TheGame = TheGame;
     var Boot = (function (_super) {
         __extends(Boot, _super);
         function Boot() {
@@ -38,6 +26,42 @@ var PhaserSandboxUwp;
         };
         return Boot;
     }(Phaser.State));
+    PhaserSandboxUwp.Boot = Boot;
+})(PhaserSandboxUwp || (PhaserSandboxUwp = {}));
+var PhaserSandboxUwp;
+(function (PhaserSandboxUwp) {
+    var TheGame = (function (_super) {
+        __extends(TheGame, _super);
+        function TheGame(config) {
+            _super.call(this, config);
+            this.state.add('boot', PhaserSandboxUwp.Boot);
+            this.state.add('splash', PhaserSandboxUwp.Splash);
+            this.state.add('title', PhaserSandboxUwp.Title);
+            this.state.start('boot');
+        }
+        return TheGame;
+    }(Phaser.Game));
+    PhaserSandboxUwp.TheGame = TheGame;
+})(PhaserSandboxUwp || (PhaserSandboxUwp = {}));
+function startApp() {
+    var gameWidth = 800;
+    var gameHeight = 600;
+    // There are a few more options you can set if needed, just take a look at Phaser.IGameCongig
+    var gameConfig = {
+        width: gameWidth,
+        height: gameHeight,
+        renderer: Phaser.AUTO,
+        parent: '',
+        resolution: 1,
+        forceSetTimeOut: false
+    };
+    var game = new PhaserSandboxUwp.TheGame(gameConfig);
+}
+window.onload = function () {
+    startApp();
+};
+var PhaserSandboxUwp;
+(function (PhaserSandboxUwp) {
     var Splash = (function (_super) {
         __extends(Splash, _super);
         function Splash() {
@@ -61,6 +85,10 @@ var PhaserSandboxUwp;
         };
         return Splash;
     }(Phaser.State));
+    PhaserSandboxUwp.Splash = Splash;
+})(PhaserSandboxUwp || (PhaserSandboxUwp = {}));
+var PhaserSandboxUwp;
+(function (PhaserSandboxUwp) {
     var Title = (function (_super) {
         __extends(Title, _super);
         function Title() {
@@ -109,21 +137,5 @@ var PhaserSandboxUwp;
         };
         return Title;
     }(Phaser.State));
+    PhaserSandboxUwp.Title = Title;
 })(PhaserSandboxUwp || (PhaserSandboxUwp = {}));
-function startApp() {
-    var gameWidth = 800;
-    var gameHeight = 600;
-    // There are a few more options you can set if needed, just take a look at Phaser.IGameCongig
-    var gameConfig = {
-        width: gameWidth,
-        height: gameHeight,
-        renderer: Phaser.AUTO,
-        parent: '',
-        resolution: 1,
-        forceSetTimeOut: false
-    };
-    var game = new PhaserSandboxUwp.TheGame(gameConfig);
-}
-window.onload = function () {
-    startApp();
-};

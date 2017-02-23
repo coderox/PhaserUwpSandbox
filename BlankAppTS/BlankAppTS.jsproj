@@ -43,52 +43,60 @@
     <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <TypeScriptOutFile>
-    </TypeScriptOutFile>
+    <TypeScriptOutFile>js/main.js</TypeScriptOutFile>
     <TypeScriptModuleKind>none</TypeScriptModuleKind>
     <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptSourceRoot>
+    </TypeScriptSourceRoot>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <TypeScriptOutFile>
-    </TypeScriptOutFile>
+    <TypeScriptOutFile>js/main.js</TypeScriptOutFile>
     <TypeScriptModuleKind>none</TypeScriptModuleKind>
     <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptSourceRoot>
+    </TypeScriptSourceRoot>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)|$(UseDotNetNativeToolchain)'=='Release|ARM|true'">
-    <TypeScriptOutFile>
-    </TypeScriptOutFile>
+    <TypeScriptOutFile>js/main.js</TypeScriptOutFile>
     <TypeScriptModuleKind>none</TypeScriptModuleKind>
     <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptSourceRoot>
+    </TypeScriptSourceRoot>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
-    <TypeScriptOutFile>
-    </TypeScriptOutFile>
+    <TypeScriptOutFile>js/main.js</TypeScriptOutFile>
     <TypeScriptModuleKind>none</TypeScriptModuleKind>
     <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptSourceRoot>
+    </TypeScriptSourceRoot>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)|$(UseDotNetNativeToolchain)'=='Release|x64|true'">
-    <TypeScriptOutFile>
-    </TypeScriptOutFile>
+    <TypeScriptOutFile>js/main.js</TypeScriptOutFile>
     <TypeScriptModuleKind>none</TypeScriptModuleKind>
     <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptSourceRoot>
+    </TypeScriptSourceRoot>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <TypeScriptOutFile>
-    </TypeScriptOutFile>
+    <TypeScriptOutFile>js/main.js</TypeScriptOutFile>
     <TypeScriptModuleKind>none</TypeScriptModuleKind>
     <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptSourceRoot>
+    </TypeScriptSourceRoot>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)|$(UseDotNetNativeToolchain)'=='Release|x86|true'">
-    <TypeScriptOutFile>
-    </TypeScriptOutFile>
+    <TypeScriptOutFile>js/main.js</TypeScriptOutFile>
     <TypeScriptModuleKind>none</TypeScriptModuleKind>
     <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptSourceRoot>
+    </TypeScriptSourceRoot>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
-    <TypeScriptOutFile>
-    </TypeScriptOutFile>
+    <TypeScriptOutFile>js/main.js</TypeScriptOutFile>
     <TypeScriptModuleKind>none</TypeScriptModuleKind>
     <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptSourceRoot>
+    </TypeScriptSourceRoot>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0'">
@@ -122,13 +130,15 @@
     <Content Include="images\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="images\StoreLogo.png" />
     <Content Include="images\Wide310x150Logo.scale-200.png" />
+    <TypeScriptCompile Include="js\boot.ts" />
     <TypeScriptCompile Include="js\main.ts" />
     <Content Include="css\default.css" />
-    <Content Include="js\main.js" />
     <Content Include="js\phaser.js" />
     <Content Include="sounds\fx_mixdown.mp3" />
     <None Include="BlankAppTS_TemporaryKey.pfx" />
     <TypeScriptCompile Include="js\phaser.d.ts" />
+    <TypeScriptCompile Include="js\splash.ts" />
+    <TypeScriptCompile Include="js\title.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4a0dddb5-7a95-4fbf-97cc-616d07737a77}" />
