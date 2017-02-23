@@ -1,6 +1,16 @@
 ﻿// For an introduction to the Blank template, see the following documentation:
 // http://go.microsoft.com/fwlink/?LinkId=232509
 
+var game;
+
+function preload() {
+
+}
+
+function create() {
+    game.stage.backgroundColor = "#4488AA";
+}
+
 (function () {
 	"use strict";
 
@@ -37,7 +47,13 @@
 
 		if (isFirstActivation) {
 			// TODO: The app was activated and had not been running. Do general startup initialization here.
-			document.addEventListener("visibilitychange", onVisibilityChanged);
+		    document.addEventListener("visibilitychange", onVisibilityChanged);
+
+		    game = new Phaser.Game(800, 600, Phaser.AUTO, 'canvas', {
+		        preload: preload,
+		        create: create
+		    });
+
 			args.setPromise(WinJS.UI.processAll());
 		}
 
