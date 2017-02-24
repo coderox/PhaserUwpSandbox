@@ -52,7 +52,7 @@
     <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>$(VersionNumberMajor).$(VersionNumberMinor)</MinimumVisualStudioVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
-    <PackageCertificateKeyFile>WinJSApp_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>..\PhaserUwpSandbox_TemporaryKey.pfx</PackageCertificateKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
@@ -74,7 +74,7 @@
     <Content Include="lib\winjs-4.0.1\css\ui-light.css" />
     <Content Include="lib\winjs-4.0.1\css\ui-dark.css" />
     <Content Include="lib\winjs-4.0.1\fonts\Symbols.ttf" />
-    <None Include="WinJSApp_TemporaryKey.pfx" />
+    <Content Include="PhaserUwpSandbox_TemporaryKey.pfx" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
   <!-- To modify your build process, add your task inside one of the targets below then uncomment

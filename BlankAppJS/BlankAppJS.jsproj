@@ -52,7 +52,7 @@
     <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>$(VersionNumberMajor).$(VersionNumberMinor)</MinimumVisualStudioVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
-    <PackageCertificateKeyFile>BlankAppJS_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>..\PhaserUwpSandbox_TemporaryKey.pfx</PackageCertificateKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
@@ -73,8 +73,8 @@
     <Content Include="js\main.js" />
     <Content Include="css\default.css" />
     <Content Include="js\phaser.js" />
+    <Content Include="PhaserUwpSandbox_TemporaryKey.pfx" />
     <Content Include="sounds\fx_mixdown.mp3" />
-    <None Include="BlankAppJS_TemporaryKey.pfx" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
   <!-- To modify your build process, add your task inside one of the targets below then uncomment

@@ -110,7 +110,7 @@
     <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>$(VersionNumberMajor).$(VersionNumberMinor)</MinimumVisualStudioVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
-    <PackageCertificateKeyFile>BlankAppTS_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>..\PhaserUwpSandbox_TemporaryKey.pfx</PackageCertificateKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
@@ -134,8 +134,8 @@
     <TypeScriptCompile Include="js\main.ts" />
     <Content Include="css\default.css" />
     <Content Include="js\phaser.js" />
+    <Content Include="PhaserUwpSandbox_TemporaryKey.pfx" />
     <Content Include="sounds\fx_mixdown.mp3" />
-    <None Include="BlankAppTS_TemporaryKey.pfx" />
     <TypeScriptCompile Include="js\phaser.d.ts" />
     <TypeScriptCompile Include="js\splash.ts" />
     <TypeScriptCompile Include="js\title.ts" />
