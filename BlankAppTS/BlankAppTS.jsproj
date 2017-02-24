@@ -133,7 +133,11 @@
     <TypeScriptCompile Include="js\boot.ts" />
     <TypeScriptCompile Include="js\main.ts" />
     <Content Include="css\default.css" />
+    <Content Include="js\boot.ts" />
+    <Content Include="js\main.ts" />
     <Content Include="js\phaser.js" />
+    <Content Include="js\splash.ts" />
+    <Content Include="js\title.ts" />
     <Content Include="PhaserUwpSandbox_TemporaryKey.pfx" />
     <Content Include="sounds\fx_mixdown.mp3" />
     <TypeScriptCompile Include="js\phaser.d.ts" />
